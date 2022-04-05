@@ -1,0 +1,31 @@
+
+{% extends 'base.html'%}
+
+{% block content %}
+<br>
+<br>
+<br>
+<div class="container">
+    <form action="/coord" method="POST">
+      <div class="form-group text-center">
+        <label for="exampleFormControlInput1"><h1>City Name</h1></label>
+        <input type="text" class="form-control" name="city" id="exampleFormControlInput1" placeholder="mumbai">
+      </div>
+      <br>
+      <br>
+      <div class="form-group text-center">
+        <label for="exampleFormControlSelect1"><h1>Select Celestial Object</h1></label>
+        <select class="form-control" id="exampleFormControlSelect1" name="obj">
+          <option value="venus">venus</option>
+          <option value="mars">mars</option>
+          <option vlaue="jupiter">jupiter</option>
+          <option value="saturn">saturn</option>
+          <option value="uranus">uranus</option>
+          <option value="neptune">neptune</option>
+        </select>
+      </div>
+      <button class="btn btn-info mt-3">Submit</button>
+    </form>
+  </div>
+
+{% endblock %}
